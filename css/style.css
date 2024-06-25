@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --TOMATO: hsl(4, 100%, 67%);
+
+  --DARKSLATEGREY: hsl(234, 29%, 20%);
+  --CHARCOALGREY: hsl(235, 18%, 26%);
+  --GREY: hsl(231, 7%, 60%);
+  --WHITE: hsl(0, 0%, 100%);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+ul li {
+  list-style: none;
+}
+
+main {
+  display: block;
+}
+
+main .text {
+  margin-top: 2rem;
+  padding: 0 2rem;
+  color: var(--CHARCOALGREY);
+}
+
+main .text h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+
+main .text p {
+  padding-bottom: 1rem;
+}
+
+main .text ul li {
+  display: flex;
+  gap: 1rem;
+}
+
+main li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+main .text ul li img {
+  height: 21px;
+}
+
+main form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+main form div {
+  display: flex;
+  flex-direction: column;
+}
+
+main form label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+main form input {
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: var(--CHARCOALGREY);
+}
+
+main form button {
+  padding: 1rem;
+  background-color: var(--DARKSLATEGREY);
+  color: var(--WHITE);
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
